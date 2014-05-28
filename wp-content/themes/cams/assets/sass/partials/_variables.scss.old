@@ -1,0 +1,16 @@
+@import "bootstrap/variables";
+//Colors
+
+//Blues
+$blue: #336699;
+$navy: #224466;
+$pale: #9fc8f2;
+
+//Earth Tones
+$brown: #454546;
+$dark-beige: #8f8d88;
+$light-beige: #b5b1a9;
+$beige: #dad5ca;
+
+//Green
+$green: #a5b233;
