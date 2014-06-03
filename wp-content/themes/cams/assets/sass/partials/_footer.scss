@@ -1,0 +1,97 @@
+footer{
+	.refer, .loyalty{
+		width: 470px;
+		height:160px;
+		padding-top:60px;
+		padding-left: 40px;
+		text-transform: uppercase;
+		.title{
+			@include all-font(30px, #fff, $knockout);
+		}
+		.text{
+			@include all-font(14px, $pale, $roboto);
+		}
+	}
+	.refer{
+		float:left;
+		background: url(../images/refer.jpg) no-repeat center center;
+	}
+	.loyalty{
+		float:right;
+		background: url(../images/loyalty.jpg) no-repeat center center;
+	}
+	.perks{
+		.col-md-3{
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+	}
+	.social{
+		height:60px;
+		background-color: $blue;
+		position:relative;
+		top:20px;
+		text-transform: uppercase;
+
+		@include all-font(14px, #fff, $roboto);
+		.text, .map{
+			padding-top: 20px;
+
+		}
+		.map{
+			background-image: url('../images/map.png');
+			background-repeat: no-repeat;
+			height: inherit;
+		}
+		.icons{
+			float:right;
+			padding-top: 10px;
+			> *{
+				height: 40px;
+				width: 40px;
+				display:inline-block;
+			}
+			.facebook{
+				background-image: url('../images/social/footer/fb-default.png');
+				background-repeat: no-repeat;
+				&:hover{
+					background-image: url('../images/social/footer/fb-hover.png');
+				}
+			}
+			.twiiter{
+				background-image: url('../images/social/footer/tw-default.png');
+				background-repeat: no-repeat;
+				&:hover{
+					background-image: url('../images/social/footer/tw-hover.png');
+				}
+			}
+			.google{
+				background-image: url('../images/social/footer/google-default.png');
+				background-repeat: no-repeat;
+				&:hover{
+					background-image: url('../images/social/footer/google-hover.png');
+				}
+			}
+			.youtube{
+				background-image: url('../images/social/footer/youtube-default.png');
+				background-repeat: no-repeat;
+				&:hover{
+					background-image: url('../images/social/footer/youtube-hover.png');
+				}
+			}
+		}
+	}
+	.footer{
+		background-color:#f6f4f2;
+		height:120px;
+		padding-top:65px;
+		@include all-font(11px, $dark-beige, "Arial");
+		.link{
+			float:right;
+			a{
+				color: $dark-beige;
+				text-decoration: underline;
+			}
+		}
+	}
+}

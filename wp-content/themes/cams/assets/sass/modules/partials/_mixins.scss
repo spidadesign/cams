@@ -58,3 +58,10 @@
   left: $left;
   position: absolute;
 }
+
+//Set the font
+@mixin all-font ($size, $color, $face){
+	font-size: $size;
+	color: $color;
+	font-family: $face;
+}

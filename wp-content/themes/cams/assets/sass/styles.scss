@@ -1,13 +1,18 @@
 // customize bootstrap variables here:
-@import "partials/variables";
 @import "bootstrap";
-//Modules
-@import "modules/all";
+
+//Modules and Variables
+@import "partials/base";
 
 // Partials
 @import "partials/header";
 @import "partials/footer";
 
+//Pages
+@import "partials/pages/home";
+@import "partials/pages/contact";
+
 
 
 //Responsive
+

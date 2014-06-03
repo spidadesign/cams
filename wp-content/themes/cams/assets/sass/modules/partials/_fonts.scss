@@ -1,5 +1,16 @@
 @font-face {
 	font-family:'Knockout50Welterweight';
-	src:url(../../fonts/knockout-50.eot);
-	src:url(../../fonts/knockout-50.eot) format("embedded-opentype"),url(../../fonts/knockout-50.woff) format("woff"),url(../../fonts/knockout-50.ttf) format("truetype"),url(../../fonts/knockout-50.svg#Knockout50Welterweight) format("svg");
+	src:url(../fonts/knockout/50/knockout-50.eot);
+	src:url(../fonts/knockout/50/knockout-50.eot) format("embedded-opentype"),
+		url(../fonts/knockout/50/knockout-50.woff) format("woff"),
+		url(../fonts/knockout/50/knockout-50.ttf) format("truetype"),
+		url(../fonts/knockout/50/knockout-50.svg#Knockout50Welterweight) format("svg");
+}
+@font-face {
+	font-family:'RobotoCondensedBold';
+	src:url(../fonts/roboto/CondensedBold/RobotoCondensed-Bold.eot);
+	src:url(../fonts/roboto/CondensedBold/RobotoCondensed-Bold.eot) format("embedded-opentype"),
+		url(../fonts/roboto/CondensedBold/RobotoCondensed-Bold.woff) format("woff"),
+		url(../fonts/roboto/CondensedBold/RobotoCondensed-Bold.ttf) format("truetype"),
+		url(../fonts/roboto/CondensedBold/RobotoCondensed-Bold.svg#RobotoCondensedBold) format("svg");
 }

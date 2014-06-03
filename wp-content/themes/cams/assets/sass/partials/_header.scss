@@ -1,0 +1,45 @@
+.top-header{
+	background-color: $navy;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	.phone{
+		text-align: center;
+		@include all-font(18px, #fff, $knockout);
+		padding-top: 40px;
+		padding-left:30px;
+		span{
+			font-size: 24px;
+		}
+	}
+	.social{
+		padding-top: 20px;
+	}
+}
+.navbar-default{
+	@include border-radius(0);
+	background-color: $pale;
+	text-transform: uppercase;
+	border: none;
+	margin-bottom: 0;
+	.navbar-nav{
+		@include center-block;
+		>li{
+			>a{
+				@include all-font(20px, $blue, $knockout);
+			}
+			&:hover{
+				background-color: $navy;
+				a{
+					color: $pale;
+				}
+			}
+		}
+
+	}
+}
+.banner{
+	img{
+		width:100%;
+		max-height: 370px;
+	}
+}

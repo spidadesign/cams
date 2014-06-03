@@ -1,0 +1,90 @@
+.banner-overlay{
+	height:185px;
+	background-color: rgba(51, 102, 153, 0.7);
+	position:absolute;
+	z-index: 2;
+	color:white;
+	text-align: center;
+	width:100%;
+	bottom: 425px;
+	padding-top:40px;
+	.text{
+		@include all-font(20px, #fff, "Arial");
+	}
+	.prez{
+		margin-top: 25px;
+		@include all-font(18px, #fff, $knockout);
+		span{
+			text-transform: uppercase;
+		}
+	}
+}
+.contact{
+	margin-top: 95px;
+	margin-bottom: 60px;
+	background-color: #e7f1fc;
+	padding-top: 35px;
+	padding-bottom: 25px;
+	text-align: center;
+	@include all-font(24px, $navy, $knockout);
+	&.container{
+		padding-left:0;
+		padding-right: 0;
+	}
+	span{
+		display: block;
+		@include all-font(16px, $blue, $knockout);
+	}
+	.phone, .address{
+		margin-top: 30px;
+	}
+	.phone{
+		span, a{
+			@include all-font(16px, $navy, $knockout);
+		}
+		a{
+			&:hover{
+				@include all-font(16px, $pale, $knockout);
+			}
+		}
+	}
+}
+.staff{
+	text-align: center;
+
+	h2{
+		@include all-font(20px, $navy, $knockout);
+	}
+	.important-peeps{
+		background-color: $blue;
+		max-width:468px;
+		padding:40px;
+		@include all-font(20px, #fff, $knockout);
+		margin-bottom: 40px;
+		&:first-child{
+			margin-left: 1px;
+			float:left;
+		}
+		&:last-child{
+			margin-right: 1px;
+			float:right;
+		}
+		span{
+			display: block;
+			@include all-font(16px, #fff, $knockout);
+		}
+	}
+	.higher-ups{
+		padding:40px;
+		@include all-font(20px, $blue, $knockout);
+		.col-md-6{
+			max-width:468px;
+			margin-top: 75px;
+			margin-bottom:20px;
+		}
+		span{
+			display: block;
+			@include all-font(16px, $blue, $knockout);
+		}
+	}
+}

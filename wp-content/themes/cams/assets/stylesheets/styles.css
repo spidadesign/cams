@@ -7891,8 +7891,487 @@ button.close {
     display: none !important;
   }
 }
+@media (min-width: 992px) {
+  /* line 29, ../sass/partials/_base.scss */
+  .container {
+    width: 940px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* line 34, ../sass/partials/_base.scss */
+  .row {
+    margin: auto;
+  }
+}
 @font-face {
   font-family: 'Knockout50Welterweight';
-  src: url(../../fonts/knockout-50.eot);
-  src: url(../../fonts/knockout-50.eot) format("embedded-opentype"), url(../../fonts/knockout-50.woff) format("woff"), url(../../fonts/knockout-50.ttf) format("truetype"), url(../../fonts/knockout-50.svg#Knockout50Welterweight) format("svg");
+  src: url(../fonts/knockout/50/knockout-50.eot);
+  src: url(../fonts/knockout/50/knockout-50.eot) format("embedded-opentype"), url(../fonts/knockout/50/knockout-50.woff) format("woff"), url(../fonts/knockout/50/knockout-50.ttf) format("truetype"), url(../fonts/knockout/50/knockout-50.svg#Knockout50Welterweight) format("svg");
+}
+
+@font-face {
+  font-family: 'RobotoCondensedBold';
+  src: url(../fonts/roboto/CondensedBold/RobotoCondensed-Bold.eot);
+  src: url(../fonts/roboto/CondensedBold/RobotoCondensed-Bold.eot) format("embedded-opentype"), url(../fonts/roboto/CondensedBold/RobotoCondensed-Bold.woff) format("woff"), url(../fonts/roboto/CondensedBold/RobotoCondensed-Bold.ttf) format("truetype"), url(../fonts/roboto/CondensedBold/RobotoCondensed-Bold.svg#RobotoCondensedBold) format("svg");
+}
+
+/* line 1, ../sass/partials/_header.scss */
+.top-header {
+  background-color: #224466;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+/* line 5, ../sass/partials/_header.scss */
+.top-header .phone {
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  font-family: "Knockout50Welterweight";
+  padding-top: 40px;
+  padding-left: 30px;
+}
+/* line 10, ../sass/partials/_header.scss */
+.top-header .phone span {
+  font-size: 24px;
+}
+/* line 14, ../sass/partials/_header.scss */
+.top-header .social {
+  padding-top: 20px;
+}
+
+/* line 18, ../sass/partials/_header.scss */
+.navbar-default {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  background-color: #9fc8f2;
+  text-transform: uppercase;
+  border: none;
+  margin-bottom: 0;
+}
+/* line 24, ../sass/partials/_header.scss */
+.navbar-default .navbar-nav {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 27, ../sass/partials/_header.scss */
+.navbar-default .navbar-nav > li > a {
+  font-size: 20px;
+  color: #336699;
+  font-family: "Knockout50Welterweight";
+}
+/* line 30, ../sass/partials/_header.scss */
+.navbar-default .navbar-nav > li:hover {
+  background-color: #224466;
+}
+/* line 32, ../sass/partials/_header.scss */
+.navbar-default .navbar-nav > li:hover a {
+  color: #9fc8f2;
+}
+
+/* line 41, ../sass/partials/_header.scss */
+.banner img {
+  width: 100%;
+  max-height: 370px;
+}
+
+/* line 2, ../sass/partials/_footer.scss */
+footer .refer, footer .loyalty {
+  width: 470px;
+  height: 160px;
+  padding-top: 60px;
+  padding-left: 40px;
+  text-transform: uppercase;
+}
+/* line 8, ../sass/partials/_footer.scss */
+footer .refer .title, footer .loyalty .title {
+  font-size: 30px;
+  color: white;
+  font-family: "Knockout50Welterweight";
+}
+/* line 11, ../sass/partials/_footer.scss */
+footer .refer .text, footer .loyalty .text {
+  font-size: 14px;
+  color: #9fc8f2;
+  font-family: "RobotoCondensedBold";
+}
+/* line 15, ../sass/partials/_footer.scss */
+footer .refer {
+  float: left;
+  background: url(../images/refer.jpg) no-repeat center center;
+}
+/* line 19, ../sass/partials/_footer.scss */
+footer .loyalty {
+  float: right;
+  background: url(../images/loyalty.jpg) no-repeat center center;
+}
+/* line 24, ../sass/partials/_footer.scss */
+footer .perks .col-md-3 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* line 29, ../sass/partials/_footer.scss */
+footer .social {
+  height: 60px;
+  background-color: #336699;
+  position: relative;
+  top: 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white;
+  font-family: "RobotoCondensedBold";
+}
+/* line 37, ../sass/partials/_footer.scss */
+footer .social .text, footer .social .map {
+  padding-top: 20px;
+}
+/* line 41, ../sass/partials/_footer.scss */
+footer .social .map {
+  background-image: url("../images/map.png");
+  background-repeat: no-repeat;
+  height: inherit;
+}
+/* line 46, ../sass/partials/_footer.scss */
+footer .social .icons {
+  float: right;
+  padding-top: 10px;
+}
+/* line 49, ../sass/partials/_footer.scss */
+footer .social .icons > * {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+}
+/* line 54, ../sass/partials/_footer.scss */
+footer .social .icons .facebook {
+  background-image: url("../images/social/footer/fb-default.png");
+  background-repeat: no-repeat;
+}
+/* line 57, ../sass/partials/_footer.scss */
+footer .social .icons .facebook:hover {
+  background-image: url("../images/social/footer/fb-hover.png");
+}
+/* line 61, ../sass/partials/_footer.scss */
+footer .social .icons .twiiter {
+  background-image: url("../images/social/footer/tw-default.png");
+  background-repeat: no-repeat;
+}
+/* line 64, ../sass/partials/_footer.scss */
+footer .social .icons .twiiter:hover {
+  background-image: url("../images/social/footer/tw-hover.png");
+}
+/* line 68, ../sass/partials/_footer.scss */
+footer .social .icons .google {
+  background-image: url("../images/social/footer/google-default.png");
+  background-repeat: no-repeat;
+}
+/* line 71, ../sass/partials/_footer.scss */
+footer .social .icons .google:hover {
+  background-image: url("../images/social/footer/google-hover.png");
+}
+/* line 75, ../sass/partials/_footer.scss */
+footer .social .icons .youtube {
+  background-image: url("../images/social/footer/youtube-default.png");
+  background-repeat: no-repeat;
+}
+/* line 78, ../sass/partials/_footer.scss */
+footer .social .icons .youtube:hover {
+  background-image: url("../images/social/footer/youtube-hover.png");
+}
+/* line 84, ../sass/partials/_footer.scss */
+footer .footer {
+  background-color: #f6f4f2;
+  height: 120px;
+  padding-top: 65px;
+  font-size: 11px;
+  color: #8f8d88;
+  font-family: "Arial";
+}
+/* line 89, ../sass/partials/_footer.scss */
+footer .footer .link {
+  float: right;
+}
+/* line 91, ../sass/partials/_footer.scss */
+footer .footer .link a {
+  color: #8f8d88;
+  text-decoration: underline;
+}
+
+/* line 1, ../sass/partials/pages/_home.scss */
+.bx-wrapper {
+  margin-bottom: 0;
+}
+/* line 3, ../sass/partials/pages/_home.scss */
+.bx-wrapper .bx-viewport {
+  border: none;
+  left: 0;
+}
+/* line 6, ../sass/partials/pages/_home.scss */
+.bx-wrapper .bx-viewport img {
+  width: 100%;
+  max-height: 415px;
+}
+/* line 11, ../sass/partials/pages/_home.scss */
+.bx-wrapper .bx-caption {
+  background: url(../images/slider-bg.png) no-repeat center center;
+  width: 380px;
+  height: 310px;
+  right: 250px;
+  left: auto;
+  bottom: 60px;
+  font-size: 30px;
+  color: white;
+  font-family: "Knockout50Welterweight";
+  text-align: center;
+}
+/* line 20, ../sass/partials/pages/_home.scss */
+.bx-wrapper .bx-caption span {
+  width: 340px;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+/* line 26, ../sass/partials/pages/_home.scss */
+.bx-wrapper .bx-pager {
+  width: auto;
+  bottom: 75px;
+  right: 420px;
+}
+
+/* line 32, ../sass/partials/pages/_home.scss */
+.main {
+  padding-top: 10px;
+  background-color: #f6f4f2;
+  padding-bottom: 115px;
+}
+/* line 36, ../sass/partials/pages/_home.scss */
+.main .col-md-8 {
+  padding-top: 40px;
+}
+/* line 39, ../sass/partials/pages/_home.scss */
+.main .sidebar {
+  padding: 20px 20px 10px 20px;
+  background: #fff;
+  text-align: center;
+}
+/* line 43, ../sass/partials/pages/_home.scss */
+.main .sidebar .first {
+  font-size: 20px;
+  color: #336699;
+  font-family: "Knockout50Welterweight";
+}
+/* line 45, ../sass/partials/pages/_home.scss */
+.main .sidebar .first span {
+  text-decoration: underline;
+}
+/* line 50, ../sass/partials/pages/_home.scss */
+.main .sidebar .second button {
+  font-size: 30px;
+  color: white;
+  font-family: "Knockout50Welterweight";
+  border-radius: 30px;
+  background-color: #336699;
+}
+/* line 57, ../sass/partials/pages/_home.scss */
+.main .sidebar .third {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #8f8d88;
+  font-family: "Knockout50Welterweight";
+}
+/* line 60, ../sass/partials/pages/_home.scss */
+.main .sidebar .third strong {
+  display: block;
+}
+/* line 64, ../sass/partials/pages/_home.scss */
+.main .sidebar .fourth {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #8f8d88;
+  font-family: "Knockout50Welterweight";
+}
+/* line 67, ../sass/partials/pages/_home.scss */
+.main .sidebar .fourth span {
+  text-transform: uppercase;
+  display: block;
+  font-size: 16px;
+}
+/* line 73, ../sass/partials/pages/_home.scss */
+.main .sidebar .fifth {
+  margin-top: 30px;
+}
+
+/* line 79, ../sass/partials/pages/_home.scss */
+.info {
+  text-transform: uppercase;
+  position: relative;
+  bottom: 48px;
+  text-align: center;
+}
+/* line 85, ../sass/partials/pages/_home.scss */
+.info section .title {
+  font-size: 20px;
+  color: white;
+  font-family: "Knockout50Welterweight";
+  background-color: #336699;
+  padding: 10px;
+}
+/* line 90, ../sass/partials/pages/_home.scss */
+.info section .content {
+  text-align: left;
+  background-color: #224466;
+  min-height: 80px;
+  padding-left: 10px;
+  padding-top: 10px;
+  line-height: 2em;
+  font-size: 14px;
+  color: #9fc8f2;
+  font-family: "Knockout50Welterweight";
+}
+/* line 100, ../sass/partials/pages/_home.scss */
+.info section a.btn {
+  background-color: #e7f1fc;
+  border: none;
+  font-size: 12px;
+  color: #336699;
+  font-family: "Arial";
+  text-transform: none;
+  margin-top: 10px;
+}
+/* line 106, ../sass/partials/pages/_home.scss */
+.info section a.btn:hover {
+  background-color: #32659c;
+  border: none;
+  color: #fff;
+}
+
+/* line 1, ../sass/partials/pages/_contact.scss */
+.banner-overlay {
+  height: 185px;
+  background-color: rgba(51, 102, 153, 0.7);
+  position: absolute;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  width: 100%;
+  bottom: 425px;
+  padding-top: 40px;
+}
+/* line 11, ../sass/partials/pages/_contact.scss */
+.banner-overlay .text {
+  font-size: 20px;
+  color: white;
+  font-family: "Arial";
+}
+/* line 14, ../sass/partials/pages/_contact.scss */
+.banner-overlay .prez {
+  margin-top: 25px;
+  font-size: 18px;
+  color: white;
+  font-family: "Knockout50Welterweight";
+}
+/* line 17, ../sass/partials/pages/_contact.scss */
+.banner-overlay .prez span {
+  text-transform: uppercase;
+}
+
+/* line 22, ../sass/partials/pages/_contact.scss */
+.contact {
+  margin-top: 95px;
+  margin-bottom: 60px;
+  background-color: #e7f1fc;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-size: 24px;
+  color: #224466;
+  font-family: "Knockout50Welterweight";
+}
+/* line 30, ../sass/partials/pages/_contact.scss */
+.contact.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 34, ../sass/partials/pages/_contact.scss */
+.contact span {
+  display: block;
+  font-size: 16px;
+  color: #336699;
+  font-family: "Knockout50Welterweight";
+}
+/* line 38, ../sass/partials/pages/_contact.scss */
+.contact .phone, .contact .address {
+  margin-top: 30px;
+}
+/* line 42, ../sass/partials/pages/_contact.scss */
+.contact .phone span, .contact .phone a {
+  font-size: 16px;
+  color: #224466;
+  font-family: "Knockout50Welterweight";
+}
+/* line 46, ../sass/partials/pages/_contact.scss */
+.contact .phone a:hover {
+  font-size: 16px;
+  color: #9fc8f2;
+  font-family: "Knockout50Welterweight";
+}
+
+/* line 52, ../sass/partials/pages/_contact.scss */
+.staff {
+  text-align: center;
+}
+/* line 55, ../sass/partials/pages/_contact.scss */
+.staff h2 {
+  font-size: 20px;
+  color: #224466;
+  font-family: "Knockout50Welterweight";
+}
+/* line 58, ../sass/partials/pages/_contact.scss */
+.staff .important-peeps {
+  background-color: #336699;
+  max-width: 468px;
+  padding: 40px;
+  font-size: 20px;
+  color: white;
+  font-family: "Knockout50Welterweight";
+  margin-bottom: 40px;
+}
+/* line 64, ../sass/partials/pages/_contact.scss */
+.staff .important-peeps:first-child {
+  margin-left: 1px;
+  float: left;
+}
+/* line 68, ../sass/partials/pages/_contact.scss */
+.staff .important-peeps:last-child {
+  margin-right: 1px;
+  float: right;
+}
+/* line 72, ../sass/partials/pages/_contact.scss */
+.staff .important-peeps span {
+  display: block;
+  font-size: 16px;
+  color: white;
+  font-family: "Knockout50Welterweight";
+}
+/* line 77, ../sass/partials/pages/_contact.scss */
+.staff .higher-ups {
+  padding: 40px;
+  font-size: 20px;
+  color: #336699;
+  font-family: "Knockout50Welterweight";
+}
+/* line 80, ../sass/partials/pages/_contact.scss */
+.staff .higher-ups .col-md-6 {
+  max-width: 468px;
+  margin-top: 75px;
+  margin-bottom: 20px;
+}
+/* line 85, ../sass/partials/pages/_contact.scss */
+.staff .higher-ups span {
+  display: block;
+  font-size: 16px;
+  color: #336699;
+  font-family: "Knockout50Welterweight";
 }
