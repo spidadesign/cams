@@ -48,6 +48,57 @@
 			}
 		}
 	}
+	.form{
+		//padding-right: 10px;
+		//width:90%;
+		max-width:423px;
+	}
+	.form-group{
+		border-bottom: 1px solid #9fc8f2;
+		//margin-bottom: 7px;
+		label{
+			@include all-font(14px, $blue, $knockout);
+			float: left;
+			text-transform: uppercase;
+			margin-right:30px;
+		}
+		input, textarea{
+			background-color: transparent;
+			border: none;
+			outline: none;
+			@include all-font(14px, $navy, "Arial");
+		}
+		textarea{
+			resize:none;
+			max-width:324px;
+			width: 324px;
+			height:105px;
+		}
+		input{
+			float: left;
+			width: 350px;
+		}
+	}
+	.marked{
+		@include all-font(12px, $blue, "Arial");
+		float:left;
+	}
+	button{
+		background-color: $blue;
+		@include all-font(16px, #fff, $knockout);
+		text-transform: uppercase;
+		border:none;
+		float:right;
+		height: 30px;
+		width: 65px;
+		padding:5px;
+		outline:none;
+			&:hover{
+				background-color: $navy;
+				color:white;
+			}
+
+	}
 }
 .staff{
 	text-align: center;

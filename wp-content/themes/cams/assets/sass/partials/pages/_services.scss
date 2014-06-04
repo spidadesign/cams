@@ -1,0 +1,51 @@
+.call-us{
+	position:absolute;
+	top: 265px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	text-transform: uppercase;
+	@include all-font(40px, #fff, $knockout);
+	span{
+		@include all-font(50px, #fff, $knockout);
+	}
+	div{
+		@include all-font(30px, #fff, $knockout);
+		margin-left: 245px;
+	}
+}
+.page-template-page-templatesservices-php{
+	.middle{
+		text-align: center;
+		padding-top: 35px;
+		padding-bottom: 25px;
+		.title{
+			margin-top: 30px;
+			margin-bottom: 30px;
+			@include all-font(25px, $navy, $knockout);
+			@include uppercase();
+		}
+		p{
+			margin-bottom: 50px;
+			@include all-font(12px, $blue, "Arial");
+			line-height: 2em;
+		}
+	}
+}
+.top-content{
+	background-color: #f6f4f2;
+	padding-top: 35px;
+	padding-bottom: 50px;
+	text-align: center;
+	@include all-font(14px, $blue, "Arial");
+	h1{
+		@include all-font(30px, $navy, $knockout);
+		@include uppercase();
+	}
+	p{
+		padding-top: 5px;
+		strong{
+			@include uppercase();
+		}
+	}
+}

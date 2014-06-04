@@ -65,3 +65,7 @@
 	color: $color;
 	font-family: $face;
 }
+//Uppercase
+@mixin uppercase(){
+	text-transform: uppercase;
+}

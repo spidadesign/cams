@@ -1,0 +1,37 @@
+//Header
+.navbar{
+	background-color: $navy;
+	.container{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.navbar-collapse{
+		padding:0;
+	}
+}
+.navbar-header{
+	height:85px;
+}
+.navbar-brand{
+	img{
+		position: absolute;
+		top: 0;
+		max-width: 230px;
+	}
+}
+//Testimonials
+@media (max-width: 767px){
+	.testimonials{
+		.first, .second{
+			width:100%;
+			padding-left:15px;
+			padding-right: 15px;
+		}
+	}
+}
+//Footer
+footer{
+	.refer, .loyalty{
+
+	}
+}

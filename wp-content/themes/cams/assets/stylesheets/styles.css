@@ -7891,15 +7891,20 @@ button.close {
     display: none !important;
   }
 }
+/* line 28, ../sass/partials/_base.scss */
+* {
+  outline: none;
+}
+
 @media (min-width: 992px) {
-  /* line 29, ../sass/partials/_base.scss */
+  /* line 32, ../sass/partials/_base.scss */
   .container {
     width: 940px;
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 34, ../sass/partials/_base.scss */
+  /* line 37, ../sass/partials/_base.scss */
   .row {
     margin: auto;
   }
@@ -7980,7 +7985,7 @@ button.close {
 
 /* line 2, ../sass/partials/_footer.scss */
 footer .refer, footer .loyalty {
-  width: 470px;
+  max-width: 470px;
   height: 160px;
   padding-top: 60px;
   padding-left: 40px;
@@ -8119,7 +8124,7 @@ footer .footer .link a {
   background: url(../images/slider-bg.png) no-repeat center center;
   width: 380px;
   height: 310px;
-  right: 250px;
+  right: 490px;
   left: auto;
   bottom: 60px;
   font-size: 30px;
@@ -8137,7 +8142,7 @@ footer .footer .link a {
 .bx-wrapper .bx-pager {
   width: auto;
   bottom: 75px;
-  right: 420px;
+  right: 665px;
 }
 
 /* line 32, ../sass/partials/pages/_home.scss */
@@ -8317,18 +8322,82 @@ footer .footer .link a {
   color: #9fc8f2;
   font-family: "Knockout50Welterweight";
 }
+/* line 51, ../sass/partials/pages/_contact.scss */
+.contact .form {
+  max-width: 423px;
+}
+/* line 56, ../sass/partials/pages/_contact.scss */
+.contact .form-group {
+  border-bottom: 1px solid #9fc8f2;
+}
+/* line 59, ../sass/partials/pages/_contact.scss */
+.contact .form-group label {
+  font-size: 14px;
+  color: #336699;
+  font-family: "Knockout50Welterweight";
+  float: left;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+/* line 65, ../sass/partials/pages/_contact.scss */
+.contact .form-group input, .contact .form-group textarea {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #224466;
+  font-family: "Arial";
+}
+/* line 71, ../sass/partials/pages/_contact.scss */
+.contact .form-group textarea {
+  resize: none;
+  max-width: 324px;
+  width: 324px;
+  height: 105px;
+}
+/* line 77, ../sass/partials/pages/_contact.scss */
+.contact .form-group input {
+  float: left;
+  width: 350px;
+}
+/* line 82, ../sass/partials/pages/_contact.scss */
+.contact .marked {
+  font-size: 12px;
+  color: #336699;
+  font-family: "Arial";
+  float: left;
+}
+/* line 86, ../sass/partials/pages/_contact.scss */
+.contact button {
+  background-color: #336699;
+  font-size: 16px;
+  color: white;
+  font-family: "Knockout50Welterweight";
+  text-transform: uppercase;
+  border: none;
+  float: right;
+  height: 30px;
+  width: 65px;
+  padding: 5px;
+  outline: none;
+}
+/* line 96, ../sass/partials/pages/_contact.scss */
+.contact button:hover {
+  background-color: #224466;
+  color: white;
+}
 
-/* line 52, ../sass/partials/pages/_contact.scss */
+/* line 103, ../sass/partials/pages/_contact.scss */
 .staff {
   text-align: center;
 }
-/* line 55, ../sass/partials/pages/_contact.scss */
+/* line 106, ../sass/partials/pages/_contact.scss */
 .staff h2 {
   font-size: 20px;
   color: #224466;
   font-family: "Knockout50Welterweight";
 }
-/* line 58, ../sass/partials/pages/_contact.scss */
+/* line 109, ../sass/partials/pages/_contact.scss */
 .staff .important-peeps {
   background-color: #336699;
   max-width: 468px;
@@ -8338,40 +8407,189 @@ footer .footer .link a {
   font-family: "Knockout50Welterweight";
   margin-bottom: 40px;
 }
-/* line 64, ../sass/partials/pages/_contact.scss */
+/* line 115, ../sass/partials/pages/_contact.scss */
 .staff .important-peeps:first-child {
   margin-left: 1px;
   float: left;
 }
-/* line 68, ../sass/partials/pages/_contact.scss */
+/* line 119, ../sass/partials/pages/_contact.scss */
 .staff .important-peeps:last-child {
   margin-right: 1px;
   float: right;
 }
-/* line 72, ../sass/partials/pages/_contact.scss */
+/* line 123, ../sass/partials/pages/_contact.scss */
 .staff .important-peeps span {
   display: block;
   font-size: 16px;
   color: white;
   font-family: "Knockout50Welterweight";
 }
-/* line 77, ../sass/partials/pages/_contact.scss */
+/* line 128, ../sass/partials/pages/_contact.scss */
 .staff .higher-ups {
   padding: 40px;
   font-size: 20px;
   color: #336699;
   font-family: "Knockout50Welterweight";
 }
-/* line 80, ../sass/partials/pages/_contact.scss */
+/* line 131, ../sass/partials/pages/_contact.scss */
 .staff .higher-ups .col-md-6 {
   max-width: 468px;
   margin-top: 75px;
   margin-bottom: 20px;
 }
-/* line 85, ../sass/partials/pages/_contact.scss */
+/* line 136, ../sass/partials/pages/_contact.scss */
 .staff .higher-ups span {
   display: block;
   font-size: 16px;
   color: #336699;
   font-family: "Knockout50Welterweight";
+}
+
+/* line 1, ../sass/partials/pages/_services.scss */
+.call-us {
+  position: absolute;
+  top: 265px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: white;
+  font-family: "Knockout50Welterweight";
+}
+/* line 9, ../sass/partials/pages/_services.scss */
+.call-us span {
+  font-size: 50px;
+  color: white;
+  font-family: "Knockout50Welterweight";
+}
+/* line 12, ../sass/partials/pages/_services.scss */
+.call-us div {
+  font-size: 30px;
+  color: white;
+  font-family: "Knockout50Welterweight";
+  margin-left: 245px;
+}
+
+/* line 18, ../sass/partials/pages/_services.scss */
+.page-template-page-templatesservices-php .middle {
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 25px;
+}
+/* line 22, ../sass/partials/pages/_services.scss */
+.page-template-page-templatesservices-php .middle .title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  color: #224466;
+  font-family: "Knockout50Welterweight";
+  text-transform: uppercase;
+}
+/* line 28, ../sass/partials/pages/_services.scss */
+.page-template-page-templatesservices-php .middle p {
+  margin-bottom: 50px;
+  font-size: 12px;
+  color: #336699;
+  font-family: "Arial";
+  line-height: 2em;
+}
+
+/* line 35, ../sass/partials/pages/_services.scss */
+.top-content {
+  background-color: #f6f4f2;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 14px;
+  color: #336699;
+  font-family: "Arial";
+}
+/* line 41, ../sass/partials/pages/_services.scss */
+.top-content h1 {
+  font-size: 30px;
+  color: #224466;
+  font-family: "Knockout50Welterweight";
+  text-transform: uppercase;
+}
+/* line 45, ../sass/partials/pages/_services.scss */
+.top-content p {
+  padding-top: 5px;
+}
+/* line 47, ../sass/partials/pages/_services.scss */
+.top-content p strong {
+  text-transform: uppercase;
+}
+
+/* line 5, ../sass/partials/pages/_testimonials.scss */
+.page-template-page-templatestestimonials-php .top-content blockquote p:last-child {
+  font-size: 18px;
+  color: #336699;
+  font-family: "Knockout50Welterweight";
+}
+
+/* line 12, ../sass/partials/pages/_testimonials.scss */
+.testimonials {
+  text-align: center;
+}
+/* line 14, ../sass/partials/pages/_testimonials.scss */
+.testimonials .title {
+  font-size: 20px;
+  color: #224466;
+  font-family: "Knockout50Welterweight";
+  text-transform: uppercase;
+}
+/* line 18, ../sass/partials/pages/_testimonials.scss */
+.testimonials .quote {
+  font-size: 12px;
+  color: #336699;
+  font-family: "Arial";
+  line-height: 2em;
+}
+/* line 22, ../sass/partials/pages/_testimonials.scss */
+.testimonials .first, .testimonials .second {
+  width: 48%;
+}
+/* line 25, ../sass/partials/pages/_testimonials.scss */
+.testimonials .first {
+  float: left;
+}
+/* line 28, ../sass/partials/pages/_testimonials.scss */
+.testimonials .second {
+  float: right;
+}
+
+/* line 2, ../sass/partials/_responsive.scss */
+.navbar {
+  background-color: #224466;
+}
+/* line 4, ../sass/partials/_responsive.scss */
+.navbar .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 8, ../sass/partials/_responsive.scss */
+.navbar .navbar-collapse {
+  padding: 0;
+}
+
+/* line 12, ../sass/partials/_responsive.scss */
+.navbar-header {
+  height: 85px;
+}
+
+/* line 16, ../sass/partials/_responsive.scss */
+.navbar-brand img {
+  position: absolute;
+  top: 0;
+  max-width: 230px;
+}
+
+@media (max-width: 767px) {
+  /* line 25, ../sass/partials/_responsive.scss */
+  .testimonials .first, .testimonials .second {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

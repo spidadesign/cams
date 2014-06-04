@@ -48,10 +48,10 @@
 			<div class="container">
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="#">Residential Demolition</a></li>
+						<li><a href="<?php echo site_url(); ?>/residential-demolition">Residential Demolition</a></li>
 						<li><a href="#">Commercial Demolition</a></li>
 						<li><a href="#">Dumpster Rentals</a></li>
-						<li><a href="#">Testimonials</a></li>
+						<li><a href="<?php echo site_url(); ?>/testimonials">Testimonials</a></li>
 						<li><a href="<?php echo site_url(); ?>/contact">Contact Us</a></li>
 					</ul>
 				</div>

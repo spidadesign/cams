@@ -25,6 +25,9 @@ $roboto: 'RobotoCondensedBold';
 
 
 //Set Container
+*{
+	outline:none;
+}
 @media (min-width: 992px){
 	.container{
 		width:940px;

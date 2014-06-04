@@ -1,0 +1,31 @@
+.page-template-page-templatestestimonials-php{
+	.top-content{
+		blockquote{
+			p{
+				&:last-child{
+					@include all-font(18px, $blue, $knockout);
+				}
+			}
+		}
+	}
+}
+.testimonials{
+	text-align: center;
+	.title{
+		@include all-font(20px, $navy, $knockout);
+		@include uppercase();
+	}
+	.quote{
+		@include all-font(12px, $blue, "Arial");
+		line-height: 2em;
+	}
+	.first, .second{
+		width:48%;
+	}
+	.first{
+		float:left;
+	}
+	.second{
+		float:right;
+	}
+}

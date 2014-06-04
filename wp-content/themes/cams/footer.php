@@ -1,6 +1,6 @@
 	<footer>
 		<div class="container">
-			<div class="refer">
+			<div class="refer col-md-6 col-sm-12 col-xs-12">
 				<div class="title">
 					Refer A Friend
 				</div>
@@ -8,7 +8,7 @@
 					Get a $20 Discount
 				</div>
 			</div>
-			<div class="loyalty">
+			<div class="loyalty col-md-6 col-sm-12 col-xs-12">
 				<div class="title">
 					Loyalty Program
 				</div>
@@ -64,6 +64,8 @@
 	</footer>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/javascripts/jquery-1.11.1.min.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/assets/plugins/jquery.bxslider/jquery.bxslider.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/javascripts/bootstrap/collapse.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/javascripts/bootstrap/transition.js"></script>
 		<script>
 			$(document).ready(function(){
 				$('.home-slider').bxSlider({
