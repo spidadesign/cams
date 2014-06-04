@@ -26,7 +26,14 @@
 				Call Now For A Free Estimate <span>(978) 694-8911</span>
 			</div>
 			<div class="col-md-4 social">
-				<img src="<?php bloginfo('template_directory'); ?>/assets/images/social/social-media.png" alt="Social Placeholder">
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style">
+				<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+				<a class="addthis_button_tweet"></a>
+				<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+				</div>
+				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53566a0a492fe796"></script>
+				<!-- AddThis Button END -->
 			</div>
 		</div>
 	</div>

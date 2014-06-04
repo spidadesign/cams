@@ -49,38 +49,52 @@
 		}
 	}
 	.form{
-		//padding-right: 10px;
-		//width:90%;
 		max-width:423px;
 	}
 	.form-group{
 		border-bottom: 1px solid #9fc8f2;
-		br{
-			//display: none;
+		margin-bottom: 0;
+		padding-top: 15px;
+		&.last-child{
+			border-bottom: none;
 		}
 		label{
 			@include all-font(14px, $blue, $knockout);
 			float: left;
 			text-transform: uppercase;
-			margin-right:30px;
+			margin-right:15px;
+			&.input{
+				margin-right: 52px;
+			}
 		}
 		input, textarea{
 			background-color: transparent;
 			border: none;
 			outline: none;
 			@include all-font(14px, $navy, "Arial");
+			padding: 10px;
 		}
 		textarea{
-			resize:none;
-			max-width:324px;
+			resize: none;
+			max-width: 324px;
 			width: 324px;
-			height:105px;
+			height: 90px;
 			float: right;
-			margin-top: -28px;
+			margin-top: -15px;
 		}
 		input{
 			float: left;
-			width: 350px;
+			width: 328px;
+			&[type="submit"]{
+				width: 65px;
+				float:right;
+				background-color: $blue;
+				@include all-font(16px, #fff, $knockout);
+				&:hover{
+					background-color: $navy;
+					color:white;
+				}
+			}
 		}
 	}
 	.marked{
@@ -88,23 +102,16 @@
 		float:left;
 	}
 	.btn{
-		background-color: $blue;
-		@include all-font(16px, #fff, $knockout);
 		text-transform: uppercase;
 		border:none;
-		float:right;
 		height: 30px;
-		width: 65px;
 		padding:5px;
 		outline:none;
-		&:hover{
-			background-color: $navy;
-			color:white;
-		}
 	}
 	.screen-reader-response, .wpcf7-not-valid-tip, .wpcf7-response-output.wpcf7-validation-errors{
 		display: none;
 	}
+
 }
 .staff{
 	text-align: center;
@@ -142,6 +149,18 @@
 		span{
 			display: block;
 			@include all-font(16px, $blue, $knockout);
+		}
+	}
+}
+
+input, textarea{
+	&.wpcf7-not-valid{
+		//background-color: #f6d8d8 !important;
+		.wpcf7-form-control-wrap &{
+			//background-color: #f6d8d8 !important;
+			.form-group &{
+				background-color: #f6d8d8 !important;
+			}
 		}
 	}
 }
