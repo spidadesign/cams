@@ -1,10 +1,28 @@
 .DS_Store
 wp-config.php
+wp-admin/
+wp-content/
+wp-includes/
+index.php
+license.txt
+readme.html
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config-sample.php
+wp-cron.php	0.3.0.1.1
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
 !.gitignore
 !wp-content/
 
 # Ignore everything in the "wp-content" directory, except the "plugins"
 # and "themes" directories.
-wp-content/*
 !wp-content/plugins/*
 !wp-content/themes/*
