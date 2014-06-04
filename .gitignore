@@ -1,4 +1,4 @@
-.DS_Store
+*/.DS_Store
 wp-config.php
 wp-admin/
 wp-content/
@@ -10,7 +10,7 @@ wp-activate.php
 wp-blog-header.php
 wp-comments-post.php
 wp-config-sample.php
-wp-cron.php	0.3.0.1.1
+wp-cron.php
 wp-links-opml.php
 wp-load.php
 wp-login.php
