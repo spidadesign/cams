@@ -58,6 +58,7 @@
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</div>
+
 	<?php
 		$curr_page = get_post();
 		if($curr_page->ID !== 5):

@@ -34,7 +34,7 @@
 		<div class="container">
 			<div class="social">
 				<div class="col-md-6">
-					<div class="col-md-4">
+					<div class="col-md-4 col-xs-5">
 						<div class="text">
 							Follow Us On
 						</div>
@@ -48,7 +48,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 map">
+				<div class="col-md-6 col-xs-12 map">
 					Check for regions we cover
 				</div>
 			</div>
@@ -74,5 +74,7 @@
 				});
 			});
 		</script>
+
+
 	</body>
 </html>

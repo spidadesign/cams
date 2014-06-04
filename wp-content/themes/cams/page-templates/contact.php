@@ -31,29 +31,8 @@ get_header();
 			<a href="mailto:sales@dumpster-rentals.com">sales@dumpster-rentals.com</a>
 		</div>
 	</div>
-	<div class="col-md-6 form">
-		<form class="form-horizontal" role="form">
-			<div class="form-group">
-				<label>Name*</label>
-				<input type="text">
-			</div>
-			<div class="form-group">
-				<label>Email*</label>
-				<input type="text">
-			</div>
-			<div class="form-group">
-				<label>Phone</label>
-				<input type="text">
-			</div>
-			<div class="form-group">
-				<label>Comments</label>
-				<textarea></textarea>
-			</div>
-			<div class="marked">
-				Marked Fields Are Mandatory
-			</div>
-			<button class="btn btn-default">Submit</button>
-		</form>
+	<div class="col-md-6 form form-horizontal">
+		<?php echo do_shortcode('[contact-form-7 id="34" title="Contact Form"]'); ?>
 	</div>
 </section>
 <section class="staff">

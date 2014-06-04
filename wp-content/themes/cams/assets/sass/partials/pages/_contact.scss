@@ -55,7 +55,9 @@
 	}
 	.form-group{
 		border-bottom: 1px solid #9fc8f2;
-		//margin-bottom: 7px;
+		br{
+			//display: none;
+		}
 		label{
 			@include all-font(14px, $blue, $knockout);
 			float: left;
@@ -73,6 +75,8 @@
 			max-width:324px;
 			width: 324px;
 			height:105px;
+			float: right;
+			margin-top: -28px;
 		}
 		input{
 			float: left;
@@ -83,7 +87,7 @@
 		@include all-font(12px, $blue, "Arial");
 		float:left;
 	}
-	button{
+	.btn{
 		background-color: $blue;
 		@include all-font(16px, #fff, $knockout);
 		text-transform: uppercase;
@@ -93,11 +97,13 @@
 		width: 65px;
 		padding:5px;
 		outline:none;
-			&:hover{
-				background-color: $navy;
-				color:white;
-			}
-
+		&:hover{
+			background-color: $navy;
+			color:white;
+		}
+	}
+	.screen-reader-response, .wpcf7-not-valid-tip, .wpcf7-response-output.wpcf7-validation-errors{
+		display: none;
 	}
 }
 .staff{

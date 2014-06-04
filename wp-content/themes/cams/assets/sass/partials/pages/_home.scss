@@ -15,18 +15,37 @@
 		right:490px;
 		left: auto;
 		bottom: 60px;
-		@include all-font(30px, #fff, $knockout);
 		text-align: center;
 		span{
 			width: 340px;
 			padding-left: 40px;
 			padding-top:40px;
+			@include all-font(30px, #fff, $knockout);
+			div{
+				@include all-font(20px, #fff, "Arial");
+			}
+			hr{
+				text-align: center;
+				width: 80px;
+				border-top: 2px solid #eeeeee;
+			}
 		}
 	}
 	.bx-pager{
 		width: auto;
 		bottom: 75px;
 		right: 665px;
+		&.bx-default-pager{
+			a{
+				background: url(../images/pager.png) no-repeat center center;
+				&.active{
+					background: url(../images/active.png) no-repeat center center;
+				}
+				&:hover{
+					background: url(../images/active.png) no-repeat center center;
+				}
+			}
+		}
 	}
 }
 .main{

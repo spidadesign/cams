@@ -5,7 +5,7 @@ Template Name: Home
 get_header();
 ?>
 <ul class="home-slider">
-  <li><img src="<?php bloginfo('template_directory'); ?>/assets/images/slider/image1.jpg" title="Boston's Leading Demolition Contractor & Dumpster Rental"></li>
+  <li><img src="<?php bloginfo('template_directory'); ?>/assets/images/slider/image1.jpg" title="Boston's Leading Demolition Contractor & Dumpster Rental <hr><div> Safety, Timely, Responsible</div>"></li>
   <li><img src="<?php bloginfo('template_directory'); ?>/assets/images/slider/image2.jpg" title="Boston's Leading Demolition Contractor & Dumpster Rental"></li>
 </ul>
 <div class="main">

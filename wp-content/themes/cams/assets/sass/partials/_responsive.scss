@@ -1,24 +1,46 @@
 //Header
-.navbar{
-	background-color: $navy;
-	.container{
-		padding-left: 0;
-		padding-right: 0;
+@media (max-width: 767px){
+	.navbar{
+		background-color: $navy;
+		.container{
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.navbar-collapse{
+			padding:0;
+		}
 	}
-	.navbar-collapse{
-		padding:0;
+	.navbar-header{
+		height:85px;
+	}
+	.navbar-brand{
+		img{
+			position: absolute;
+			top: 0;
+			max-width: 230px;
+		}
 	}
 }
-.navbar-header{
-	height:85px;
-}
-.navbar-brand{
-	img{
-		position: absolute;
-		top: 0;
-		max-width: 230px;
+//Banner
+@media (max-width: 767px){
+	.bx-caption{
+		display: none;
 	}
 }
+
+//Home
+@media (max-width: 767px){
+	.info{
+		section{
+			a{
+				&.btn{
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}
+
 //Testimonials
 @media (max-width: 767px){
 	.testimonials{
@@ -30,8 +52,27 @@
 	}
 }
 //Footer
-footer{
-	.refer, .loyalty{
+@media (max-width: 767px){
+	footer{
+		.refer, .loyalty{
 
+		}
+		.social{
+			.col-md-8{
+				padding-left: 10px;
+			}
+			.col-md-4{
+				&.col-xs-5{
+					padding-left: 0;
+				}
+			}
+			.icons{
+				margin-top: -25px;
+				padding-top: 0;
+				position: relative;
+				left: 15px;
+				top: -5px;
+			}
+		}
 	}
 }
