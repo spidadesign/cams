@@ -30,16 +30,30 @@
 		//echo "<pre>"; print_r($loop); echo "</pre>";
 		if($count%2 === 0):
 	?>
-		<div class="second">
+			<div class="second">
 				<div class="title"><?php the_title(); ?></div>
-				<div class="quote"><?php the_content(); ?></div>
+				<div class="quote" id="quote<?php echo $count; ?>">
+					<?php the_excerpt(); ?>
+					<button type="button" class="btn" data-toggle="collapse" data-target="#demo<?php echo $count; ?>">Show More</button>
+				</div>
+				<div class="full-quote collapse" id="demo<?php echo $count; ?>">
+					<?php the_content(); ?>
+					<button type="button" class="btn" data-toggle="collapse" data-target="#demo<?php echo $count; ?>">Show Less</button>
+				</div>
 			</div>
-	</div>
+
 	<?php else: ?>
-		<div class="row">
+
 			<div class="first">
-				<div class="title"><?php the_title(); ?></div>
-				<div class="quote"><?php the_content(); ?></div>
+			<div class="title"><?php the_title(); ?></div>
+				<div class="quote" id="quote<?php echo $count; ?>">
+					<?php the_excerpt(); ?>
+					<button type="button" class="btn" data-toggle="collapse" data-target="#demo<?php echo $count; ?>">Show More</button>
+				</div>
+				<div class="full-quote collapse" id="demo<?php echo $count; ?>">
+					<?php the_content(); ?>
+					<button type="button" class="btn" data-toggle="collapse" data-target="#demo<?php echo $count; ?>">Show Less</button>
+				</div>
 			</div>
 	<?php
 		endif;

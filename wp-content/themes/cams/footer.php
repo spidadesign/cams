@@ -83,11 +83,22 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/javascripts/bootstrap/collapse.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/javascripts/bootstrap/transition.js"></script>
 		<script>
+
 			$(document).ready(function(){
 				$('.home-slider').bxSlider({
 					controls: false,
 					captions: true
 				});
+			});
+			$('.btn').click(function(){
+				if($(this).parent().siblings().hasClass("hidden")){
+					$(this).parent().siblings().removeClass("hidden");
+				}
+				else{
+					$(this).parent().addClass("hidden");
+				}
+
+				console.log($(this).parent().attr("id"));
 			});
 		</script>
 	</body>
