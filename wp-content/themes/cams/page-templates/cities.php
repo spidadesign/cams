@@ -1,6 +1,6 @@
 <?php
 	/*
-	Template Name: Testimonials
+	Template Name: City
 
 	*/
 	get_header();
@@ -17,7 +17,8 @@
 </section>
 <section class="top-content">
 	<div class="container">
-		<h1><?php the_title();?></h1>
+		<h1><?php the_title(); ?>
+		<p><?php echo apply_filters('the_content', get_post()->post_content); ?></p>
 	</div>
 </section>
 <section class="testimonials">

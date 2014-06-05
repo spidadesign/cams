@@ -1,5 +1,6 @@
 .page-template-page-templatestestimonials-php{
 	.top-content{
+		padding-bottom: 20px;
 		blockquote{
 			p{
 				&:last-child{
@@ -11,9 +12,13 @@
 }
 .testimonials{
 	text-align: center;
+	padding-top: 60px;
+	padding-bottom:50px;
 	.title{
 		@include all-font(20px, $navy, $knockout);
 		@include uppercase();
+		padding-bottom: 20px;
+		padding-top:30px;
 	}
 	.quote{
 		@include all-font(12px, $blue, "Arial");

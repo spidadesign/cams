@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title><?php echo get_bloginfo('name');  wp_title(); ?></title>
-		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/assets/plugins/jquery.bxslider/jquery.bxslider.css">
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('template_directory'); ?>/assets/stylesheets/styles.css">
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon.ico" />
 		<!--[if lt IE 9]>
@@ -67,6 +66,7 @@
 	</div>
 
 	<?php
+
 		$curr_page = get_post();
 		if($curr_page->ID !== 5):
 	?>

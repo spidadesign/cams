@@ -49,7 +49,23 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-xs-12 map">
-					Check for regions we cover
+					Check for regions we cover:
+					<form name="cities">
+						<select name="city" OnChange='location.href=cities.city.options[selectedIndex].value'>
+							<option selected>Please Select A City</option>
+							<?php
+								$cities = array(
+									'post_type' => 'city',
+									'posts_per_page' => -1
+								);
+								wp_reset_query();
+								$loop = new WP_Query( $cities );
+								while ( $loop->have_posts() ) : $loop->the_post();
+							?>
+								<option value="<?php the_permalink();?>"><?php the_title();?></option>
+							<?php endwhile; ?>
+						</select>
+					</form>
 				</div>
 			</div>
 		</div>
@@ -57,7 +73,7 @@
 			<div class="container">
 				&copy; 2014 Cam's Demolition & Disposal Inc. All rights reserved.  8 Jewel Drive, Wilmington, MA 01887
 				<div class="link">
-					Site by: <a href="#">SEO Image</a>
+					Site by: <a href="http://try.seoimage.com/">SEO Image</a>
 				</div>
 			</div>
 		</div>
@@ -74,7 +90,5 @@
 				});
 			});
 		</script>
-
-
 	</body>
 </html>

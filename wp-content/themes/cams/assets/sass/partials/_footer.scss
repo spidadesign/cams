@@ -42,6 +42,9 @@ footer{
 			background-image: url('../images/map.png');
 			background-repeat: no-repeat;
 			height: inherit;
+			form{
+				display: inline;
+			}
 		}
 		.icons{
 			float:right;
