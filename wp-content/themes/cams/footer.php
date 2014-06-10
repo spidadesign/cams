@@ -90,14 +90,7 @@
 					captions: true
 				});
 			});
-			$('.testimonials .btn').click(function(){
-				if($(this).parent().siblings().hasClass("hidden")){
-					$(this).parent().siblings().removeClass("hidden");
-				}
-				else{
-					$(this).parent().addClass("hidden");
-				}
-			});
+
 		</script>
 	</body>
 </html>

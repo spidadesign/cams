@@ -4,7 +4,7 @@ Template Name: Contact
 */
 get_header();
 ?>
-<section class="banner-overlay">
+<section class="banner-overlay hidden-xs">
 	<div class="container">
 		<div class="text">
 			"Your call to our office will be answered direct by our in house dumpster<br>
@@ -16,6 +16,7 @@ get_header();
 	</div>
 </section>
 <section class="contact container">
+	<h1 class="visible-xs">Contact Us</h1>
 	<div class="col-md-6 left">
 		<span>Hours</span>
 		Monday through Friday<br>
@@ -49,15 +50,15 @@ get_header();
 			</div>
 		</div>
 		<div class="higher-ups row">
-			<div class="col-md-12 col-xs-4">
+			<div class="col-md-12 col-xs-12">
 				Michele Percival, Office Manager
 				<span>phone: 978.694.8911 (ext. 16) mail: michele@dumpster-rentals.com</span>
 			</div>
-			<div class="col-md-6 col-xs-4">
+			<div class="col-md-6 col-xs-12">
 				Laurie, Dumpster Rentals
 				<span>phone: 978.694.8911 (ext. 10) mail: laurie@dumpster-rentals.com</span>
 			</div>
-			<div class="col-md-6 col-xs-4">
+			<div class="col-md-6 col-xs-12">
 				Joe DiMarzio, Demolition Estimator
 				<span>phone: 978.694.8911 (ext. 14)    mail: joe@dumpster-rentals.com</span>
 			</div>

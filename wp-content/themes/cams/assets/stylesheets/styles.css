@@ -8217,7 +8217,7 @@ footer .footer .link a {
   text-decoration: underline;
 }
 /* line 69, ../sass/partials/pages/_home.scss */
-.main .sidebar .second button {
+.main .sidebar .second a {
   font-size: 30px;
   color: white;
   font-family: "Knockout50Welterweight";
@@ -8640,6 +8640,11 @@ footer .footer .link a {
 .testimonials .hidden {
   display: none;
 }
+/* line 39, ../sass/partials/pages/_testimonials.scss */
+.testimonials button {
+  margin: auto;
+  display: block;
+}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
   /* line 6, ../sass/partials/_responsive.scss */
@@ -8705,62 +8710,68 @@ footer .footer .link a {
     font-size: 20px;
   }
 
-  /* line 67, ../sass/partials/_responsive.scss */
-  .contact .form {
-    max-width: initial;
+  /* line 66, ../sass/partials/_responsive.scss */
+  .contact {
+    margin-top: auto;
+    padding-top: auto;
   }
 
-  /* line 72, ../sass/partials/_responsive.scss */
+  /* line 71, ../sass/partials/_responsive.scss */
   .form-horizontal .form-group {
     margin: auto;
   }
 
-  /* line 78, ../sass/partials/_responsive.scss */
+  /* line 77, ../sass/partials/_responsive.scss */
   .contact .form-group input[type="submit"] {
     padding: 5px 10px 10px 10px;
   }
+  /* line 81, ../sass/partials/_responsive.scss */
+  .contact .form {
+    max-width: initial;
+  }
 
-  /* line 85, ../sass/partials/_responsive.scss */
+  /* line 87, ../sass/partials/_responsive.scss */
   .staff .important-peeps:first-child, .staff .important-peeps:last-child {
     margin: auto;
     float: none;
     margin-bottom: 10px;
   }
-  /* line 92, ../sass/partials/_responsive.scss */
+  /* line 94, ../sass/partials/_responsive.scss */
   .staff .higher-ups .col-md-6 {
-    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 5px;
   }
 
-  /* line 97, ../sass/partials/_responsive.scss */
+  /* line 100, ../sass/partials/_responsive.scss */
   .top-content {
     padding-top: 0px;
     padding-bottom: 5px;
   }
 
-  /* line 101, ../sass/partials/_responsive.scss */
+  /* line 104, ../sass/partials/_responsive.scss */
   .testimonials {
     padding-top: 0px;
   }
 
-  /* line 106, ../sass/partials/_responsive.scss */
+  /* line 109, ../sass/partials/_responsive.scss */
   footer .refer, footer .loyalty {
     max-width: initial;
   }
-  /* line 110, ../sass/partials/_responsive.scss */
+  /* line 113, ../sass/partials/_responsive.scss */
   footer .social .map {
     background-repeat: repeat;
     background-color: #336699;
     margin-top: 15px;
   }
-  /* line 115, ../sass/partials/_responsive.scss */
+  /* line 118, ../sass/partials/_responsive.scss */
   footer .social .col-md-8 {
     padding-left: 10px;
   }
-  /* line 119, ../sass/partials/_responsive.scss */
+  /* line 122, ../sass/partials/_responsive.scss */
   footer .social .col-md-4.col-xs-5 {
     padding-left: 0;
   }
-  /* line 123, ../sass/partials/_responsive.scss */
+  /* line 126, ../sass/partials/_responsive.scss */
   footer .social .icons {
     margin-top: 0px;
     padding-top: 0;
@@ -8768,22 +8779,38 @@ footer .footer .link a {
     left: 15px;
     top: 10px;
   }
-  /* line 131, ../sass/partials/_responsive.scss */
+  /* line 134, ../sass/partials/_responsive.scss */
   footer .footer {
     text-align: center;
   }
-  /* line 133, ../sass/partials/_responsive.scss */
+  /* line 136, ../sass/partials/_responsive.scss */
   footer .footer .link {
     float: none;
   }
+
+  /* line 141, ../sass/partials/_responsive.scss */
+  footer .perks .col-md-3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  /* line 150, ../sass/partials/_responsive.scss */
+  footer .social .icons {
+    top: -30px;
+  }
+  /* line 153, ../sass/partials/_responsive.scss */
+  footer .social .map {
+    margin-top: -25px;
+  }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
-  /* line 142, ../sass/partials/_responsive.scss */
+  /* line 162, ../sass/partials/_responsive.scss */
   .call-us {
     color: #9fc8f2;
   }
 
-  /* line 147, ../sass/partials/_responsive.scss */
+  /* line 167, ../sass/partials/_responsive.scss */
   .testimonials .first, .testimonials .second {
     width: 48%;
   }

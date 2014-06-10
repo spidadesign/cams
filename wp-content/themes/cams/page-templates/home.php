@@ -18,9 +18,9 @@ get_header();
 				Call <span>Now</span> For<br> A Free Estimate
 			</div>
 			<div class="second">
-				<button class="btn btn-default">
+				<a type="button" class="btn btn-success" href="tel:+19786948911">
 					(978) 694-8911
-				</button>
+				</a>
 			</div>
 			<div class="third">
 				<strong>Cam's Demolition & Disposal Inc.,</strong>
