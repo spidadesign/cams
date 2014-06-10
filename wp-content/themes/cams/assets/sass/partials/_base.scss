@@ -28,6 +28,10 @@ $roboto: 'RobotoCondensedBold';
 *{
 	outline:none;
 }
+html, body{
+	width: auto !important;
+	overflow-x: hidden !important;
+}
 @media (min-width: 992px){
 	.container{
 		width:940px;

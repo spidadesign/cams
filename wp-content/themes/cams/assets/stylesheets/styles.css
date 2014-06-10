@@ -7897,15 +7897,21 @@ button.close {
   outline: none;
 }
 
+/* line 31, ../sass/partials/_base.scss */
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
 @media (min-width: 992px) {
-  /* line 32, ../sass/partials/_base.scss */
+  /* line 36, ../sass/partials/_base.scss */
   .container {
     width: 940px;
     padding-left: 0;
     padding-right: 0;
   }
 
-  /* line 37, ../sass/partials/_base.scss */
+  /* line 41, ../sass/partials/_base.scss */
   .row {
     margin: auto;
   }
@@ -8635,68 +8641,150 @@ footer .footer .link a {
   display: none;
 }
 
-@media (max-width: 767px) {
-  /* line 3, ../sass/partials/_responsive.scss */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  /* line 6, ../sass/partials/_responsive.scss */
   .navbar {
     background-color: #224466;
   }
-  /* line 5, ../sass/partials/_responsive.scss */
+  /* line 8, ../sass/partials/_responsive.scss */
   .navbar .container {
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 9, ../sass/partials/_responsive.scss */
+  /* line 12, ../sass/partials/_responsive.scss */
   .navbar .navbar-collapse {
     padding: 0;
   }
 
-  /* line 13, ../sass/partials/_responsive.scss */
+  /* line 16, ../sass/partials/_responsive.scss */
   .navbar-header {
     height: 85px;
   }
 
-  /* line 17, ../sass/partials/_responsive.scss */
+  /* line 20, ../sass/partials/_responsive.scss */
   .navbar-brand img {
     position: absolute;
     top: 0;
     max-width: 230px;
   }
-}
-@media (max-width: 767px) {
-  /* line 26, ../sass/partials/_responsive.scss */
+
+  /* line 27, ../sass/partials/_responsive.scss */
   .bx-caption {
     display: none;
   }
-}
-@media (max-width: 767px) {
-  /* line 36, ../sass/partials/_responsive.scss */
+
+  /* line 35, ../sass/partials/_responsive.scss */
   .info section a.btn {
     margin-bottom: 15px;
   }
-}
-@media (max-width: 767px) {
-  /* line 47, ../sass/partials/_responsive.scss */
+
+  /* line 42, ../sass/partials/_responsive.scss */
+  .fifth img {
+    margin: auto;
+  }
+
+  /* line 48, ../sass/partials/_responsive.scss */
   .testimonials .first, .testimonials .second {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
   }
-}
-@media (max-width: 767px) {
+
+  /* line 55, ../sass/partials/_responsive.scss */
+  .call-us {
+    top: 90px;
+    font-size: 20px;
+  }
+  /* line 58, ../sass/partials/_responsive.scss */
+  .call-us span {
+    font-size: 30px;
+  }
   /* line 61, ../sass/partials/_responsive.scss */
+  .call-us div {
+    margin-left: auto;
+    font-size: 20px;
+  }
+
+  /* line 67, ../sass/partials/_responsive.scss */
+  .contact .form {
+    max-width: initial;
+  }
+
+  /* line 72, ../sass/partials/_responsive.scss */
+  .form-horizontal .form-group {
+    margin: auto;
+  }
+
+  /* line 78, ../sass/partials/_responsive.scss */
+  .contact .form-group input[type="submit"] {
+    padding: 5px 10px 10px 10px;
+  }
+
+  /* line 85, ../sass/partials/_responsive.scss */
+  .staff .important-peeps:first-child, .staff .important-peeps:last-child {
+    margin: auto;
+    float: none;
+    margin-bottom: 10px;
+  }
+  /* line 92, ../sass/partials/_responsive.scss */
+  .staff .higher-ups .col-md-6 {
+    margin: auto;
+  }
+
+  /* line 97, ../sass/partials/_responsive.scss */
+  .top-content {
+    padding-top: 0px;
+    padding-bottom: 5px;
+  }
+
+  /* line 101, ../sass/partials/_responsive.scss */
+  .testimonials {
+    padding-top: 0px;
+  }
+
+  /* line 106, ../sass/partials/_responsive.scss */
+  footer .refer, footer .loyalty {
+    max-width: initial;
+  }
+  /* line 110, ../sass/partials/_responsive.scss */
+  footer .social .map {
+    background-repeat: repeat;
+    background-color: #336699;
+    margin-top: 15px;
+  }
+  /* line 115, ../sass/partials/_responsive.scss */
   footer .social .col-md-8 {
     padding-left: 10px;
   }
-  /* line 65, ../sass/partials/_responsive.scss */
+  /* line 119, ../sass/partials/_responsive.scss */
   footer .social .col-md-4.col-xs-5 {
     padding-left: 0;
   }
-  /* line 69, ../sass/partials/_responsive.scss */
+  /* line 123, ../sass/partials/_responsive.scss */
   footer .social .icons {
-    margin-top: -25px;
+    margin-top: 0px;
     padding-top: 0;
     position: relative;
     left: 15px;
-    top: -5px;
+    top: 10px;
+  }
+  /* line 131, ../sass/partials/_responsive.scss */
+  footer .footer {
+    text-align: center;
+  }
+  /* line 133, ../sass/partials/_responsive.scss */
+  footer .footer .link {
+    float: none;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  /* line 142, ../sass/partials/_responsive.scss */
+  .call-us {
+    color: #9fc8f2;
+  }
+
+  /* line 147, ../sass/partials/_responsive.scss */
+  .testimonials .first, .testimonials .second {
+    width: 48%;
   }
 }

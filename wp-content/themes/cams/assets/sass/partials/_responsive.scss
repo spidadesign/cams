@@ -1,5 +1,8 @@
-//Header
-@media (max-width: 767px){
+//iPhone
+//All
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px){
+
+	//Header
 	.navbar{
 		background-color: $navy;
 		.container{
@@ -20,16 +23,12 @@
 			max-width: 230px;
 		}
 	}
-}
-//Banner
-@media (max-width: 767px){
+	//Banner
 	.bx-caption{
 		display: none;
 	}
-}
 
-//Home
-@media (max-width: 767px){
+	//Home
 	.info{
 		section{
 			a{
@@ -39,10 +38,12 @@
 			}
 		}
 	}
-}
-
-//Testimonials
-@media (max-width: 767px){
+	.fifth{
+		img{
+			margin: auto;
+		}
+	}
+	//Testimonials
 	.testimonials{
 		.first, .second{
 			width:100%;
@@ -50,14 +51,67 @@
 			padding-right: 15px;
 		}
 	}
-}
-//Footer
-@media (max-width: 767px){
+	//contact
+	.call-us{
+		top: 90px;
+		font-size: 20px;
+		span{
+			font-size: 30px;
+		}
+		div{
+			margin-left: auto;
+			font-size: 20px;
+		}
+	}
+	.contact{
+		.form{
+			max-width: initial;
+		}
+	}
+	.form-horizontal{
+		.form-group{
+			margin:auto;
+		}
+	}
+	.contact{
+		.form-group{
+			input[type="submit"]{
+				padding: 5px 10px 10px 10px;
+			}
+		}
+	}
+	.staff{
+		.important-peeps{
+			&:first-child, &:last-child{
+				margin:auto;
+				float:none;
+				margin-bottom:10px;
+			}
+		}
+		.higher-ups{
+			.col-md-6{
+				margin:auto;
+			}
+		}
+	}
+	.top-content{
+		padding-top: 0px;
+		padding-bottom: 5px;
+	}
+	.testimonials{
+		padding-top: 0px;
+	}
+	//Footer
 	footer{
 		.refer, .loyalty{
-
+			max-width: initial;
 		}
 		.social{
+			.map{
+				background-repeat: repeat;
+				background-color: #336699;
+				margin-top: 15px;
+			}
 			.col-md-8{
 				padding-left: 10px;
 			}
@@ -67,12 +121,31 @@
 				}
 			}
 			.icons{
-				margin-top: -25px;
+				margin-top: 0px;
 				padding-top: 0;
 				position: relative;
 				left: 15px;
-				top: -5px;
+				top: 10px;
 			}
+		}
+		.footer{
+			text-align: center;
+			.link{
+				float:none;
+			}
+		}
+	}
+}
+//Landscape
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape){
+	//Header
+	.call-us{
+		color: $pale;
+	}
+	//Testimonials
+	.testimonials{
+		.first, .second{
+			width: 48%;
 		}
 	}
 }

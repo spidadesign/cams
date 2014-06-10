@@ -17,16 +17,16 @@
 				</div>
 			</div>
 			<div class="perks">
-				<div class="col-md-3 col-sm-12 col-xs-12">
+				<div class="col-md-3 col-sm-6 col-xs-6">
 					<img src="<?php bloginfo('template_directory'); ?>/assets/images/perks/1.png" class="img-responsive">
 				</div>
-				<div class="col-md-3 col-sm-12 col-xs-12">
+				<div class="col-md-3 col-sm-3 col-xs-6">
 					<img src="<?php bloginfo('template_directory'); ?>/assets/images/perks/2.png" class="img-responsive">
 				</div>
-				<div class="col-md-3 col-sm-12 col-xs-12">
+				<div class="col-md-3 col-sm-12 col-xs-6">
 					<img src="<?php bloginfo('template_directory'); ?>/assets/images/perks/3.png" class="img-responsive">
 				</div>
-				<div class="col-md-3 col-sm-12 col-xs-12">
+				<div class="col-md-3 col-sm-12 col-xs-6">
 					<img src="<?php bloginfo('template_directory'); ?>/assets/images/perks/4.png"class="img-responsive">
 				</div>
 			</div>
@@ -90,15 +90,13 @@
 					captions: true
 				});
 			});
-			$('.btn').click(function(){
+			$('.testimonials .btn').click(function(){
 				if($(this).parent().siblings().hasClass("hidden")){
 					$(this).parent().siblings().removeClass("hidden");
 				}
 				else{
 					$(this).parent().addClass("hidden");
 				}
-
-				console.log($(this).parent().attr("id"));
 			});
 		</script>
 	</body>

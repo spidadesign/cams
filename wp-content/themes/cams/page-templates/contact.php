@@ -39,25 +39,25 @@ get_header();
 	<div class="container">
 		<h2>Executive Directors</h2>
 		<div class="row">
-			<div class="important-peeps col-md-6">
+			<div class="important-peeps col-md-6 col-xs-12">
 				Paul Cammarata, President
 				<span>phone: 978.694.8911 (ext. 12) mail: paul@dumpster-rentals.com</span>
 			</div>
-			<div class="important-peeps col-md-6">
+			<div class="important-peeps col-md-6 col-sm-12 col-xs-12">
 				Bob Cammarata, V.P Operations
 				<span>phone: 978.694.8911 (ext. 15) mail: bob@dumpster-rentals.com</span>
 			</div>
 		</div>
 		<div class="higher-ups row">
-			<div class="col-md-12">
+			<div class="col-md-12 col-xs-4">
 				Michele Percival, Office Manager
 				<span>phone: 978.694.8911 (ext. 16) mail: michele@dumpster-rentals.com</span>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 col-xs-4">
 				Laurie, Dumpster Rentals
 				<span>phone: 978.694.8911 (ext. 10) mail: laurie@dumpster-rentals.com</span>
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 col-xs-4">
 				Joe DiMarzio, Demolition Estimator
 				<span>phone: 978.694.8911 (ext. 14)    mail: joe@dumpster-rentals.com</span>
 			</div>
