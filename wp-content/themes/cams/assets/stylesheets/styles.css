@@ -8000,6 +8000,11 @@ html, body {
   padding-right: 10px;
 }
 
+/* line 54, ../sass/partials/_header.scss */
+.navbar {
+  z-index: 1;
+}
+
 /* line 2, ../sass/partials/_footer.scss */
 footer .refer, footer .loyalty {
   max-width: 470px;
@@ -8223,44 +8228,45 @@ footer .footer .link a {
   font-family: "Knockout50Welterweight";
   border-radius: 30px;
   background-color: #336699;
+  border: none;
 }
-/* line 76, ../sass/partials/pages/_home.scss */
+/* line 77, ../sass/partials/pages/_home.scss */
 .main .sidebar .third {
   margin-top: 15px;
   font-size: 14px;
   color: #8f8d88;
   font-family: "Knockout50Welterweight";
 }
-/* line 79, ../sass/partials/pages/_home.scss */
+/* line 80, ../sass/partials/pages/_home.scss */
 .main .sidebar .third strong {
   display: block;
 }
-/* line 83, ../sass/partials/pages/_home.scss */
+/* line 84, ../sass/partials/pages/_home.scss */
 .main .sidebar .fourth {
   margin-top: 30px;
   font-size: 14px;
   color: #8f8d88;
   font-family: "Knockout50Welterweight";
 }
-/* line 86, ../sass/partials/pages/_home.scss */
+/* line 87, ../sass/partials/pages/_home.scss */
 .main .sidebar .fourth span {
   text-transform: uppercase;
   display: block;
   font-size: 16px;
 }
-/* line 92, ../sass/partials/pages/_home.scss */
+/* line 93, ../sass/partials/pages/_home.scss */
 .main .sidebar .fifth {
   margin-top: 30px;
 }
 
-/* line 98, ../sass/partials/pages/_home.scss */
+/* line 99, ../sass/partials/pages/_home.scss */
 .info {
   text-transform: uppercase;
   position: relative;
   bottom: 48px;
   text-align: center;
 }
-/* line 104, ../sass/partials/pages/_home.scss */
+/* line 105, ../sass/partials/pages/_home.scss */
 .info section .title {
   font-size: 20px;
   color: white;
@@ -8268,7 +8274,7 @@ footer .footer .link a {
   background-color: #336699;
   padding: 10px;
 }
-/* line 109, ../sass/partials/pages/_home.scss */
+/* line 110, ../sass/partials/pages/_home.scss */
 .info section .content {
   text-align: left;
   background-color: #224466;
@@ -8280,7 +8286,7 @@ footer .footer .link a {
   color: #9fc8f2;
   font-family: "Knockout50Welterweight";
 }
-/* line 119, ../sass/partials/pages/_home.scss */
+/* line 120, ../sass/partials/pages/_home.scss */
 .info section a.btn {
   background-color: #e7f1fc;
   border: none;
@@ -8290,7 +8296,7 @@ footer .footer .link a {
   text-transform: none;
   margin-top: 10px;
 }
-/* line 125, ../sass/partials/pages/_home.scss */
+/* line 126, ../sass/partials/pages/_home.scss */
 .info section a.btn:hover {
   background-color: #32659c;
   border: none;
