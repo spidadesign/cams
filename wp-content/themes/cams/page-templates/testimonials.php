@@ -26,19 +26,31 @@
 		wp_reset_query();
 		$loop = new WP_Query( $testimonials );
 		$posts = wp_count_posts('testimonial');
-//		echo "<pre>"; print_r($posts); echo "</pre>";
-		$posts = $posts->publish;
-		$count = 1;
+		$count = 0;
+
+		//Get post count
+		$postCount = $loop->post_count;
+
+		//Determine if post count is even or odd
+		if($postCount%2 === 1):
+			//Subtract 1 from $postCount and divide by 2
+			$colCounter = ($postCount+1)/2;
+		echo $colCounter;
+		else:
+			$colCounter = $postCount/2;
+		endif;
+		?>
+		
+		<?
 		while ( $loop->have_posts() ) : $loop->the_post();
 			$content = explode(' ', get_the_content());
-			//echo "<pre>"; print_r($content); echo "</pre>";
-			if($count%2 === 0):
-				echo '<div class="second">';
-			else:
-				echo '<div class="first">';
+			if($count === 0):
+				echo '<div class="col-md-6">';
+			elseif($count === $colCounter):
+				echo '</div><div class="col-md-6">';
 			endif;
 		?>
-
+			<div class="row">
 				<div class="title"><?php the_title(); ?></div>
 				<div class="quote" id="quote<?php echo $count; ?>">
 					<?php
@@ -59,6 +71,7 @@
 		$count++;
 		endwhile;
 	?>
+	</div>
 	</div>
 </section>
 <?php get_footer(); ?>
