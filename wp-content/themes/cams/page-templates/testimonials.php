@@ -53,7 +53,7 @@
 					?>
 
 				</div>
-				<button type="button" class="btn" data-toggle="collapse" data-target="#demo<?php echo $count; ?>">Show More</button>
+				<button type="button" class="btn show-more" data-toggle="collapse" data-target="#demo<?php echo $count; ?>">Show More</button>
 			</div>
 	<?php
 		$count++;

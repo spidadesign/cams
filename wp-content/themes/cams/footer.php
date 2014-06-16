@@ -90,7 +90,20 @@
 					captions: true
 				});
 			});
-
+			$("button.show-more").click(function(){
+				if($(this).hasClass('alive')){
+					$(this).removeClass('alive');
+					$(this).text(function () {
+    					return $(this).text().replace("Less", "More"); 
+					});//$(this).text().replace('Less', 'More');
+				}
+				else{
+					$(this).addClass('alive');
+					$(".alive").text(function () {
+    					return $(this).text().replace("More", "Less"); 
+					});
+				}
+			});
 		</script>
 	</body>
 </html>
