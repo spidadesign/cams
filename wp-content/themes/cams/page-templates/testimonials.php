@@ -35,7 +35,6 @@
 		if($postCount%2 === 1):
 			//Subtract 1 from $postCount and divide by 2
 			$colCounter = ($postCount+1)/2;
-		echo $colCounter;
 		else:
 			$colCounter = $postCount/2;
 		endif;
@@ -44,9 +43,12 @@
 		<?
 		while ( $loop->have_posts() ) : $loop->the_post();
 			$content = explode(' ', get_the_content());
+
+			//if count = 0, start the first column
 			if($count === 0):
 				echo '<div class="col-md-6">';
 			elseif($count === $colCounter):
+				//if count = halfway point, end first column and start second
 				echo '</div><div class="col-md-6">';
 			endif;
 		?>
@@ -68,7 +70,7 @@
 				<button type="button" class="btn show-more" data-toggle="collapse" data-target="#demo<?php echo $count; ?>">Show More</button>
 			</div>
 	<?php
-		$count++;
+			$count++;
 		endwhile;
 	?>
 	</div>

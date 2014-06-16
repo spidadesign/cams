@@ -8815,15 +8815,16 @@ footer .footer .link a {
   /* line 153, ../sass/partials/_responsive.scss */
   footer .social .map {
     margin-top: -25px;
+    padding-top: 8px;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
-  /* line 162, ../sass/partials/_responsive.scss */
+  /* line 163, ../sass/partials/_responsive.scss */
   .call-us {
     color: #9fc8f2;
   }
 
-  /* line 167, ../sass/partials/_responsive.scss */
+  /* line 168, ../sass/partials/_responsive.scss */
   .testimonials .first, .testimonials .second {
     width: 48%;
   }
